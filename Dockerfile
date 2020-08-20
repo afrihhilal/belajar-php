@@ -7,5 +7,5 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 RUN yes | pecl install xdebug-2.9.6 \
 	&& docker-php-ext-enable xdebug
 	
-COPY '../belajar php' /var/www/html/
+COPY . /var/www/html/
 EXPOSE 80
