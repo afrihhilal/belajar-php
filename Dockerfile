@@ -6,5 +6,4 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 
 RUN yes | pecl install xdebug-2.9.6 \
 	&& docker-php-ext-enable xdebug
-
 EXPOSE 80
